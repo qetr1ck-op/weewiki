@@ -1,0 +1,273 @@
+/*============tabsControl==============*/
+#tabsControl {
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	color: #FFFFFF;
+	background: url(../img/theme/navbar_common.png) #000000 repeat-x;
+}
+
+#tabsControl>UL {
+	list-style: none;
+}
+
+#tabsControl>UL .selected {
+	background: url(../img/theme/navbar_selected.png) center center no-repeat;
+}
+
+#tabsControl>UL>LI {
+	float: left;
+	height: 47px;
+	text-align: center;
+}
+
+#backBar {
+	width: 100%;
+	height: 47px;
+	display: none;
+	text-align: center;
+}
+
+#backBar>h1 {
+	color: #DCDCDC;
+	font-size: 22px;
+}
+
+#content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top:0px;
+	left:0px;
+	width: 100%;
+	height: 100%;
+	background: #aaa;
+	overflow: hidden;
+}
+
+#tabsControl>UL DIV {
+	height: 47px;
+	font-size: 10px;
+	line-height: 84px;
+	background-position:center 30%;
+	background-repeat:no-repeat;
+}
+
+#preloader {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	display: none;
+	opacity: 0.5;
+	z-index: 1000;
+	background: #FFF;
+}
+
+#preloaderImg {
+	position: relative;
+	opacity: 1;
+	z-index: 10001;
+}
+
+P#btnPurchase {
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #000;
+    border: 2px solid #FFF;
+    border-bottom-left-radius: 9px 9px;
+    border-bottom-right-radius: 9px 9px;
+    border-top-left-radius: 9px 9px;
+    border-top-right-radius: 9px 9px;
+    cursor: pointer;
+    background-color: #80BD4D;
+   line-height:24px;
+    height:24px;
+    opacity: 1.0;
+}
+
+P#btnPreload {
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: rgba(0,0,0,1) 0 -1px 1px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #555;
+    border: 2px solid #fff;
+    border-bottom-left-radius: 11px 11px;
+    border-bottom-right-radius: 11px 11px;
+    border-top-left-radius: 11px 11px;
+    border-top-right-radius: 11px 11px;
+    cursor: pointer;
+    background: url(../img/progress.png) repeat-y;
+    line-height:25px;
+    height:20px;
+}
+
+.button_back {
+    position: absolute;
+    overflow: hidden;
+    top: 8px;
+    left: 10px;
+    margin: 0;
+    border-width: 0 5px;
+    padding: 0 3px;
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    white-space: nowrap;
+    background: none;
+    -webkit-border-image: url(../img/theme/button_back.png) 0 5 0 5;
+}
+/*============Protection==============*/
+#signInBtn {
+	  display: none;
+	  position: absolute;
+	  margin: 15px;
+	  padding: 0 8px;
+    line-height: 28px;
+	  border-radius: 5px;
+    z-index: 1;
+	  background: #000000 url(../img/theme/signInBg.png) repeat-x;
+}
+
+#signInBtn > span {
+    color: white;
+    padding-left: 22px;
+    background: url(../img/theme/signInIcon.png) left center no-repeat;
+}
+
+#protectionWrapper {
+  	width: 100%;
+  	height: 100%;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	display: none;
+  	z-index: 3000;
+  	background: #666666;
+}
+
+.protectionBackBar {
+  	height: 47px;
+  	width: 100%;
+  	position: fixed;
+  	top: 0;
+  	z-index: 2;
+  	background: #000000 url(../img/theme/navbar_common.png) repeat-x;
+}
+
+.protectionWindow {
+  	margin-top: 47px;
+  	text-align: center;
+  	z-index: 0;
+}
+
+.protectionImg {
+  	width: 187px;
+  	height: 70px;
+  	background: url(../img/theme/protectionImg.png) no-repeat;
+  	margin: 10px auto;
+}
+
+.protectionForm {
+  	min-width: 220px;
+  	max-width: 500px;
+  	background: #858585;
+  	margin: 10px auto;
+  	padding: 40px;
+  	border-radius: 10px
+}
+
+.protectionErrorMessage {
+  	color: red;
+}
+
+.protectionWrapperInputs {
+  	min-width: 220px;
+  	max-width: 280px;
+  	margin: 0 auto;
+}
+
+.protectionForm input {
+  	display: block;
+  	margin: 10px auto;
+  	width: 100%;
+  	box-sizing: border-box;
+  	border: 2px solid #8A8A8A;
+  	border-radius: 8px;
+  	background: url(../img/theme/protectionInputBg.png) repeat-x;
+  	padding: 0 0 0 10px;
+  	font: 20px/44px Helvetica;
+  	color: black;
+  	/*for iOS 5.0*/
+  	line-height: 100%;
+  	height: 44px;
+}
+
+.protectionForm ::-webkit-input-placeholder {
+    color: black;
+}
+
+.protectionForm :-moz-placeholder {
+    /* FF 4-18 */
+    color: black;
+}
+
+.protectionForm ::-moz-placeholder {
+    /* FF 19+ */
+    color: black;
+}
+
+.protectionForm :-ms-input-placeholder {
+    /* IE 10+ */
+    color: black;
+}
+
+.protectionSubmit {
+  	border: 2px solid #5A5A5A;
+  	box-sizing: border-box;
+  	border-radius: 8px;
+  	background: url(../img/theme/protectionSubmitBg.png) repeat-x;
+  	font: 22px/44px Helvetica;
+}
+/*============Shake form when incorrect==============*/
+@keyframes shake{
+    0% { transform: translate(5px, 0); }
+    50% { transform: translate(-5px, 0); }
+    100% { transform: translate(0, 0); }
+}
+
+
+
+.shake {
+    animation-name: shake;
+    animation-duration: 150ms;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+
+    -moz-animation-name: shake;
+    -moz-animation-duration: 150ms;
+    -moz-animation-iteration-count: 2;
+    -moz-animation-timing-function: linear;
+
+
+}
