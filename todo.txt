@@ -1,0 +1,20 @@
+WeeWikiPaint
+
+Minimum Marketing Feature:
+* marketing home page
+- collaborative painting wiki
+- wiki-fy the pages
+- more complex painting
+- more colabrative features
+
+Uses Stories:
+* "hello world" server
+- "hello world" clint (one browser)
+- support multiple browser
+
+Enginiring Tasks:
+* automated build
+- static code analothis (linter )
+- continious integration
+- server-side testing
+- client-side testing
